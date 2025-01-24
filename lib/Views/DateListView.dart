@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:connections/controllers/DateController.dart';
 import 'package:flutter/material.dart';
@@ -71,8 +72,8 @@ class DateListView extends GetView<DateController> {
                             children: [
                               const Text('Date',
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14,)),
-                              Text(formattedDate, style: TextStyle(fontSize: 14),),
-                              Text(formattedTime, style: TextStyle(fontSize: 14),),
+                              Text(formattedDate, style: const TextStyle(fontSize: 14),),
+                              Text(formattedTime, style: const TextStyle(fontSize: 14),),
                             ],
                           ),
                         ),
@@ -82,8 +83,8 @@ class DateListView extends GetView<DateController> {
                             children: [
                               const Text('Location',
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
-                              Text(date.location, style: TextStyle(fontSize: 14)),
-                              Text('${date.postcode}'),
+                              Text(date.location, style: const TextStyle(fontSize: 14)),
+                              Text(date.postcode),
                             ],
                           ),
                         ),

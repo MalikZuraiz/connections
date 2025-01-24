@@ -28,8 +28,8 @@ class DatingApp extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 20.0),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 20.0),
                         child: Center(
                           child: Text(
                             'Connection App',
